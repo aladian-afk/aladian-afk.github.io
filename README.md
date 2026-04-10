@@ -1,2 +1,2 @@
 # Trabalhando-com-HTML/CSS
-repositorio criado para a disciplica de padrões web
+repositorio criado para a disciplina de padrões web
