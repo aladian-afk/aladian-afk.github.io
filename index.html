@@ -50,7 +50,7 @@
     </section>
 
     <section>
-    <h3>Principais pokémon de Kanto</h3>
+    <title>Principais pokémon de Kanto</title>
     <table border="1">
       <tr>
         <th>Nome</th>
@@ -88,18 +88,8 @@
       </tr>
     </table>
         </section>
-    <section>
-        
-    <h2>Saiba Mais</h2>
-
-    <p>
-        Acesse o site oficial para mais Informações:
-        <a href="https://www.pokemon.com.br" target="_blank">Site Oficial Pokémon</a>
-    </p>
-    </section>
-
-
-  <title>Tabela com Colspan e Rowspan</title>
+   
+  <title>Tabela Pokémon com Colspan e Rowspan</title>
 
   <style>
     body{
@@ -109,7 +99,7 @@
     }
 
     table{
-      width: 700px;
+      width: 800px;
       border-collapse: collapse;
       margin: auto;
       background: white;
@@ -122,67 +112,87 @@
     }
 
     th{
-      background: #0077cc;
-      color: white;
+      background: #ffcb05;
+      color: #2a75bb;
+      font-size: 18px;
     }
 
-    .destaque{
+    .tipo{
       background: #dff0ff;
+      font-weight: bold;
+    }
+
+    .lendario{
+      background: #ffe599;
       font-weight: bold;
     }
   </style>
 </head>
 <body>
 
-  <h2 style="text-align:center;">Exemplo de Tabela com Colspan e Rowspan</h2>
+  <h2 style="text-align:center;">
+    Tabela Pokémon com Colspan e Rowspan
+  </h2>
 
   <table>
 
     <!-- Cabeçalho -->
     <tr>
-      <th rowspan="2">Aluno</th>
-      <th colspan="3">Notas</th>
-      <th rowspan="2">Média</th>
+      <th rowspan="2">Pokémon</th>
+      <th colspan="3">Atributos</th>
+      <th rowspan="2">Categoria</th>
     </tr>
 
     <tr>
-      <th>Matemática</th>
-      <th>Português</th>
-      <th>História</th>
+      <th>Tipo</th>
+      <th>Poder</th>
+      <th>Velocidade</th>
     </tr>
 
     <!-- Linha 1 -->
     <tr>
-      <td>João</td>
-      <td>8.5</td>
-      <td>7.0</td>
-      <td>9.0</td>
-      <td class="destaque">8.2</td>
+      <td>Pikachu</td>
+      <td class="tipo">Elétrico</td>
+      <td>90</td>
+      <td>120</td>
+      <td>Raro</td>
     </tr>
 
     <!-- Linha 2 -->
     <tr>
-      <td>Maria</td>
-      <td colspan="2">Dispensada</td>
-      <td>10</td>
-      <td class="destaque">10</td>
+      <td>Charizard</td>
+      <td colspan="2">Fogo / Voador</td>
+      <td>100</td>
+      <td class="lendario">Épico</td>
     </tr>
 
     <!-- Linha 3 -->
     <tr>
-      <td rowspan="2">Carlos</td>
-      <td>6.0</td>
-      <td>7.5</td>
-      <td>8.0</td>
-      <td class="destaque">7.1</td>
+      <td rowspan="2">Mewtwo</td>
+      <td class="tipo">Psíquico</td>
+      <td>150</td>
+      <td>130</td>
+      <td class="lendario">Lendário</td>
     </tr>
 
+    <!-- Linha 4 -->
     <tr>
-      <td colspan="3">Recuperação em andamento</td>
-      <td class="destaque">-</td>
+      <td colspan="3">
+        Pokémon criado em laboratório com poderes especiais
+      </td>
+      <td class="lendario">Ultra Raro</td>
     </tr>
+      </table>
 
-    </table>
+   <section>
+        
+    <h2>Saiba Mais</h2>
+
+    <p>
+        Acesse o site oficial para mais Informações:
+        <a href="https://www.pokemon.com.br" target="_blank">Site Oficial Pokémon</a>
+    </p>
+    </section>
 
     </main>
   </body>    
