@@ -135,59 +135,54 @@
 </head>
 <body>
 
-  <h2 style="text-align:center;">
-    Tabela Pokémon com Colspan e Rowspan
-  </h2>
+  
 
-  <table>
+    <!-- o <table> é o elemento mais complexo do exemplo. -->
+    <table border="1">
+        <!-- <tr> (Table Row) cria a linha. Para pensarmos em colunas, temos que 
+         antes pensarmos em linha, então, sempre terá uma linha -->
+         <caption>Tabela pokemon</caption>
+        <tr>
+            <!-- <th> (Table Header) cria as celulas como cabeçalho. Dessa forma, os conteúdos dessas
+             células serão renderizados em negrito e centralizados. -->
+            <th>Dia</th>
+            <th>Curso</th>
+            <th>Nível</th>
+            <th>Vagas</th>
+        </tr>
+        <tr>
+            <!-- <td> (Table Data) preenche as células com o conteúdo informado. -->
+            <td>De <del>15/05</del> para <ins>20/05</ins></td>
+            <td>Saladas Tropicais</td>
 
-    <!-- Cabeçalho -->
-    <tr>
-      <th rowspan="2">Pokémon</th>
-      <th colspan="3">Atributos</th>
-      <th rowspan="2">Categoria</th>
-    </tr>
+            <!-- Expandindo/esticando verticalmente para ocupar o espaço de duas linhas -->
+            <td rowspan="2">Iniciante</td>
+            
+            <td>10</td>
+        </tr>
+        <tr>
+            <td>22/05</td>
+            <td>Molhos Naturais</td>
 
-    <tr>
-      <th>Tipo</th>
-      <th>Poder</th>
-      <th>Velocidade</th>
-    </tr>
+            <!-- Removido o dado que será ocupado pela definição anterior. 
+            <td> Avançado </td>       -->
 
-    <!-- Linha 1 -->
-    <tr>
-      <td>Pikachu</td>
-      <td class="tipo">Elétrico</td>
-      <td>90</td>
-      <td>120</td>
-      <td>Raro</td>
-    </tr>
+            <td>De <del>08</del> para <ins>19</ins></td>
+        </tr>
+        <tr>
+            <td>07/06</td>
+            <td>Trabalhando com Ervas Finas</td>
+            <td>Avançado</td>
+            <td>05</td>
+        </tr>
 
-    <!-- Linha 2 -->
-    <tr>
-      <td>Charizard</td>
-      <td colspan="2">Fogo / Voador</td>
-      <td>100</td>
-      <td class="lendario">Épico</td>
-    </tr>
+        <tr>
+            <td colspan="4" align="center">
+                <strong>Aviso:</strong> Inscrições <i>online</i> encerram 48 horas antes de cada curso!
+            </td>
+        </tr>
 
-    <!-- Linha 3 -->
-    <tr>
-      <td rowspan="2">Mewtwo</td>
-      <td class="tipo">Psíquico</td>
-      <td>150</td>
-      <td>130</td>
-      <td class="lendario">Lendário</td>
-    </tr>
-
-    <!-- Linha 4 -->
-    <tr>
-      <td colspan="3">
-        Pokémon criado em laboratório com poderes especiais
-      </td>
-      <td class="lendario">Ultra Raro</td>
-    </tr>
-      </table>
+    </table>
 
    <section>
         
