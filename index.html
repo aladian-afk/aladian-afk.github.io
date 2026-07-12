@@ -3,11 +3,10 @@
 <head>
   <meta charset="utf-8">
     <title> Guia pokémon </title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
   </head>
     <body>
-
-    <header>  
+    <header>
       <h1>Guia Pokémon</h1>
         <p>Site sobre o universo Pokémon</p>
     </header>
@@ -41,6 +40,7 @@
 
        <section id="tipos">
       <h2>Principais Tipos de Pokémon</h2>
+    <table>
       <ul>
         <li>Fogo</li>
         <li>Água</li>
@@ -48,10 +48,10 @@
         <li>Planta</li>
       </ul>
     </section>
-
+  </table>
     <section>
 
-    <title>Principais pokémon de Kanto</title>
+    <h2>Principais pokémon de Kanto</h2>
     <table border="1">
       <tr>
         <th>Nome</th>
@@ -59,12 +59,8 @@
         <th>Altura</th>
         <th>Peso</th>
       </tr>
-
-    <h2>
-    Tabela de Informações pokemon
-    </h2>
-
-      <tr>
+  
+       <tr>
         <td>Pikachu</td>
         <td>Elétrico</td>
         <td>0.4m</td>
@@ -95,7 +91,6 @@
         </section>
 
    <section>
-<body>
 
 <h2>Pokémon e região</h2>
 
@@ -155,7 +150,65 @@
         <a href="https://www.pokemon.com.br" target="_blank">Site Oficial Pokémon</a>
     </p>
     </section>
+<footer>
+    <p>&copy; 2026 Guia Pokémon - Projeto HTML e CSS</p>
+</footer>
+<section id="contato">
 
+    <h2>Fale Conosco</h2>
+
+    <fieldset class="caixa-contato">
+        <legend><strong>Contato com o Guia Pokémon</strong></legend>
+
+        <form action="#" method="POST">
+
+            <label for="nome">Nome do Treinador:</label>
+            <input type="text" id="nome" name="nome" required>
+
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="pokemon">Pokémon Favorito:</label>
+            <input type="text" id="pokemon" name="pokemon">
+
+            <label for="mensagem">Mensagem:</label>
+            <textarea id="mensagem" name="mensagem" rows="6" required></textarea>
+
+            <button type="submit" id="btn-enviar">Enviar</button>
+
+        </form>
+    </fieldset>
+
+    </section>
+    <fieldset class="caixa-contato">
+
+<legend>
+Contato com o Guia Pokémon
+</legend>
+
+<form>
+
+<label>
+Nome do treinador:
+</label>
+
+<input type="text">
+
+
+<label>
+Pokémon favorito:
+</label>
+
+<input type="text">
+
+
+<button id="btn-enviar">
+Enviar mensagem
+</button>
+
+</form>
+
+    </fieldset>
     </main>
   </body>    
 </html>
